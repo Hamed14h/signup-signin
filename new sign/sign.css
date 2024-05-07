@@ -1,0 +1,82 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #35515c;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.panels {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+  flex-direction: column;
+}
+
+.left-panel,
+.right-panel {
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #0f0e0e;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+button {
+  padding: 20px 30px;
+  font-size: 25px;
+  color: white; /* Default text color for buttons */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.left-panel {
+  background-color: #ff6347;
+  color: white;
+}
+
+.left-panel button {
+  background-color: #0c0b0b; /* Darker red for the sign in button */
+}
+
+.right-panel {
+  background-color: #eee;
+  color: black;
+}
+
+.right-panel button {
+  background-color: #131212; /* Light gray for the sign up button */
+  color: #f7f5f5; /* Dark gray text for better readability */
+}
+
+.right-panel button:hover {
+  background-color: #ddd; /* Lighter gray on hover */
+}

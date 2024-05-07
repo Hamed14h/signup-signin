@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="sign.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@105.6,300..700&family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="login_endpoint" class="form form-hidden" id="login">
+        <h1 class="title">Login</h1>
+        <div class="error_message form_message"></div>
+        <div class="form_input">
+          <input
+            type="text"
+            class="form_maininput"
+            autofocus
+            placeholder="Username or Email"
+          />
+          <div class="input_error_message"></div>
+        </div>
+        <div class="form_input">
+          <input
+            type="password"
+            class="form_maininput"
+            placeholder="Password"
+          />
+          <div class="input_error_message"></div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class="form_text">
+          <a href="#" class="form_link" id="link_password"
+            >Forget your password?</a
+          >
+        </p>
+        <p class="form_text">
+          <a href="#" class="form_link" id="linkCreatAccount"
+            >Don't have an account?</a
+          >
+        </p>
+      </form>
+      <form action="create_account_endpoint" class="form" id="CreatAccount">
+        <h1 class="title">Create Account</h1>
+        <div class="error_message form_message"></div>
+        <div class="form_input">
+          <input type="text" class="form_maininput" placeholder="Username" />
+        </div>
+        <div class="form_input">
+          <input type="email" class="form_maininput" placeholder="Email" />
+          <div class="input_error_message"></div>
+        </div>
+        <div class="form_input">
+          <input
+            type="password"
+            class="form_maininput"
+            placeholder="Password"
+          />
+          <div class="input_error_message"></div>
+        </div>
+        <div class="form_input">
+          <input
+            type="password"
+            class="form_maininput"
+            placeholder="Confirm Password"
+          />
+          <div class="input_error_message"></div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class="form_text">
+          <a href="#" class="form_link" id="linkLogin"
+            >Already have an account? Sign in here.</a
+          >
+        </p>
+      </form>
+    </div>
+    <script src="sign.js"></script>
+  </body>
+</html>
